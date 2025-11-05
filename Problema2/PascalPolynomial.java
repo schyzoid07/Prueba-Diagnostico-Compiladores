@@ -90,7 +90,7 @@ public class PascalPolynomial {
     public static void main(String[] args) {
         int n_medicion = 100; 
         
-        System.out.println("=== 🚀 Ejecutando Java: Generación de (x+1)^" + n_medicion + " ===");
+        System.out.println("=== Ejecutando Java: Generación de (x+1)^" + n_medicion + " ===");
         
         long startTime = System.nanoTime();
         long[] coeficientes_100 = generarCoeficientes(n_medicion);

@@ -37,20 +37,20 @@ public class ValidadorDeCadenas {
     
     // --- Método Principal de Ejemplo ---
     public static void main(String[] args) {
-        System.out.println("🔬 Reconocimiento de Notación Científica:");
+        System.out.println("Reconocimiento de Notación Científica:");
         probarNotacionCientifica("1.23e-4");
         probarNotacionCientifica("-5E+10");
         probarNotacionCientifica("123.45");
         probarNotacionCientifica("1.2.3e4"); // Inválido
         probarNotacionCientifica("e10");    // Inválido
 
-        System.out.println("\n🌐 Reconocimiento de Dirección IP v4:");
+        System.out.println("\nReconocimiento de Dirección IP v4:");
         probarDireccionIpv4("192.168.1.1");
         probarDireccionIpv4("255.255.255.0");
         probarDireccionIpv4("256.0.0.1"); // Inválido (octeto > 255)
         probarDireccionIpv4("1.2.3");   // Inválido (falta un octeto)
 
-        System.out.println("\n📧 Reconocimiento de Correo Electrónico:");
+        System.out.println("\nReconocimiento de Correo Electrónico:");
         probarCorreoElectronico("usuario.prueba@dominio.com");
         probarCorreoElectronico("nombre-completo123@sub.dominio.net");
         probarCorreoElectronico("usuario@@dominio.com"); // Inválido
